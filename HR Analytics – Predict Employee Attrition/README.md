@@ -1,6 +1,7 @@
 # Project Overview
 
-This HR Analytics project identifies patterns influencing employee attrition and retention. It helps organizations design data-driven retention strategies.
+This HR Analytics project aims to identify key factors that influence employee attrition and visualize actionable insights through an interactive Power BI dashboard.
+The goal is to help HR teams make informed, data-driven retention decisions by integrating predictive analytics with clear, visual storytelling.
 
 # Dataset
 
@@ -12,24 +13,43 @@ Target Variable: Attrition (Yes/No)
 
 # Key Steps
 
-Data Preprocessing: Removed null values, encoded categorical variables, and normalized numerical fields.
+Data Preparation:
+Cleaned and preprocessed the dataset in Python (handled missing values, encoded categorical variables, normalized numeric columns).
 
-Exploratory Analysis: Visualized attrition trends by gender, job role, department, and job satisfaction.
+Exploratory Analysis:
+Used Python (Matplotlib, Seaborn) to identify trends in attrition by age, department, gender, salary, and job satisfaction.
 
-Model Building: Applied classification models (Decision Tree, Logistic Regression, Random Forest) to predict attrition.
+Model Building:
+Implemented classification models such as Decision Tree, Logistic Regression, and Random Forest to predict attrition likelihood.
 
-Dashboard Creation: Designed a Power BI Dashboard summarizing insights on attrition rate, job satisfaction, and salary distribution.
+Dashboard Development (Power BI):
+Created an interactive Power BI dashboard displaying:
+
+Overall attrition rate
+
+Attrition by department, gender, and job role
+
+Salary distribution and job satisfaction levels
+
+Key drivers of attrition based on model outputs and KPIs
+
+Model Interpretation:
+Applied SHAP values for feature-importance visualization and explainable AI insights.
 
 # Key Insights
 
-Overall attrition rate: 16.12%
+Overall attrition rate ≈ 16%
 
-Employees with low job satisfaction and fewer promotions are more likely to leave.
+Higher attrition among employees with low job satisfaction and fewer promotions.
 
-Higher attrition observed in Sales and Research & Development departments.
+Sales and R&D departments show higher turnover.
 
-Average monthly income of retained employees is higher.
+Retained employees have higher average monthly income and greater work–life balance scores.
 
 # Tools & Technologies
 
-Power BI, Python, Pandas, Matplotlib, SHAP (for model explainability)
+Python (Libraries): Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, SHAP
+
+Visualization: Power BI (Interactive Dashboard)
+
+Techniques: EDA, Feature Engineering, Classification Modeling, Explainable AI
